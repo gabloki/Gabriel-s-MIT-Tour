@@ -415,7 +415,7 @@ function renderTour() {
       return `<li>${f}${ls.length ? `<div class="links"><span class="more">Click to learn more</span>${ls.map(linkHtml).join('')}</div>` : ''}</li>`;
     }).join('');
     const links = '';
-    const map = `<figure class="map-fig"><img src="${MAP_SRC}" alt="Map of central MIT campus with numbered buildings" loading="lazy"><figcaption>Campus map. Building 32 (Stata) is at the top, Building 66 is the triangle to its right, and Building 10 sits under the Great Dome.</figcaption></figure>`;
+    const map = `<figure class="map-fig"><img src="${MAP_SRC}" alt="Map of central MIT campus with numbered buildings"><figcaption>Campus map. Building 32 (Stata) is at the top, Building 66 is the triangle to its right, and Building 10 sits under the Great Dome.</figcaption></figure>`;
     const last = pos === order.length - 1 ? `<button class="finish" type="button" data-menu>Back to menu</button>` : '';
     return `<article class="page" aria-label="Stop ${pos + 1} of ${order.length}">
       <div class="page-inner">
